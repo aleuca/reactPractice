@@ -1,0 +1,17 @@
+{
+  "name": "react_demo_app",
+  "version": "1.0.0",
+  "scripts": {
+    "ui": "cd ui && npm start",
+    "server": "nodemon api/app.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run ui\""
+  },
+  "dependencies": {
+    "body-parser": "1.18.2",
+    "express": "4.16.3"
+  },
+  "devDependencies": {
+    "concurrently": "3.5.0",
+    "nodemon": "1.17.3"
+  }
+}
